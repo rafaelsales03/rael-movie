@@ -10,9 +10,7 @@ function Slider({ info, title, serie, people, season, idSerie }) {
 
   const someFunction = (id) => {
     serie ? navigate(`/detailSeries/${id}`) : navigate(`/detalhe/${id}`)
-    // eslint-disable-next-line no-unused-expressions
     people ? navigate(`/`) : ''
-    // eslint-disable-next-line no-unused-expressions
     season ? navigate(`/detailSeries/${idSerie}`) : ''
     navigate(0)
   }
