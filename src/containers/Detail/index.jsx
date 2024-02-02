@@ -74,7 +74,11 @@ function Detail() {
               ))}
           </ContainerMovies>
           {movieSimilar && (
-            <Slider info={movieSimilar} title={'Filmes Similares'} />
+            <Slider
+              infoSeries={false}
+              info={movieSimilar}
+              title={'Filmes Similares'}
+            />
           )}
         </>
       )}
