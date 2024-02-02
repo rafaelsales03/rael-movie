@@ -39,7 +39,8 @@ export const Background = styled.div`
 
   span {
     position: absolute;
-    margin-bottom: 660px;
+    margin-bottom: 480px;
+    margin-left: 910px;
     cursor: pointer;
     color: aliceblue;
   }

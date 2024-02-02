@@ -71,12 +71,18 @@ function Home() {
           </Container>
         </Background>
       )}
-      {topMovies && <Slider info={topMovies} title={'Top Filmes'} />}
+      {topMovies && (
+        <Slider infoSeries={false} info={topMovies} title={'Top Filmes'} />
+      )}
       {topSeries && (
-        <Slider serie={true} info={topSeries} title={'Top Séries'} />
+        <Slider infoSeries={true} info={topSeries} title={'Top Séries'} />
       )}
       {popularSeries && (
-        <Slider serie={true} info={popularSeries} title={'Séries Populares'} />
+        <Slider
+          infoSeries={true}
+          info={popularSeries}
+          title={'Séries Populares'}
+        />
       )}
       {popularPeople && (
         <Slider people={true} info={popularPeople} title={'Top Artistas'} />
